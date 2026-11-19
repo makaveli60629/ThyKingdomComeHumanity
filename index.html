@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=5">
+<link rel="stylesheet" href="/assets/style.css?v=6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Thy Kingdom Come Humanity Ministries">
 <meta property="og:title" content="Come As You Are | Thy Kingdom Come Humanity Ministries">
@@ -43,6 +43,7 @@
 </section>
 <div id="public-site">
 <header class="site-header">
+  <div class="header-light-rain" id="header-light-rain" aria-hidden="true"></div>
   <div class="container header-inner">
     <a class="wordmark" href="#home" aria-label="Thy Kingdom Come Humanity Ministries home">
       <img src="/assets/thy-kingdom-come-logo.webp" width="118" height="118" alt="">
@@ -141,8 +142,9 @@
 (function(){
   var gate=document.getElementById('welcome'),site=document.getElementById('public-site'),enter=document.getElementById('enter-site'),replay=document.getElementById('replay-intro');
   var reduced=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var sky=document.getElementById('light-rain');
-  if(!reduced){for(var i=0;i<52;i++){var d=document.createElement('span');d.className='light-drop';d.style.left=((i*47.31)%100)+'%';d.style.animationDelay=(-(i*0.41)%8)+'s';d.style.animationDuration=(3.8+(i%7)*0.49)+'s';d.style.opacity=(0.19+(i%5)*0.085);sky.appendChild(d);}}
+  var sky=document.getElementById('light-rain'),headerSky=document.getElementById('header-light-rain');
+  if(!reduced){for(var i=0;i<52;i++){var d=document.createElement('span');d.className='light-drop';d.style.left=((i*47.31)%100)+'%';d.style.animationDelay=(-(i*0.41)%8)+'s';d.style.animationDuration=(3.8+(i%7)*0.49)+'s';d.style.opacity=(0.19+(i%5)*0.085);sky.appendChild(d);}
+    for(var j=0;j<34;j++){var ray=document.createElement('span');ray.className='header-light-drop';ray.style.left=((j*37.19)%100)+'%';ray.style.animationDelay=(-(j*0.43)%7)+'s';ray.style.animationDuration=(3.4+(j%6)*0.49)+'s';ray.style.opacity=(0.30+(j%5)*0.12);headerSky.appendChild(ray);}}
   function finish(skipFocus){
     document.body.classList.add('entered');site.inert=false;
     try{sessionStorage.setItem('tkc_site_entered','yes')}catch(e){}
