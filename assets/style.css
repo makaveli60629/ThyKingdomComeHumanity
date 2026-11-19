@@ -57,20 +57,46 @@
   .footer-links{gap:15px 22px}
 }
 
-/* Translucent header light-rain, while keeping the original winged emblem intact */
-.site-header{isolation:isolate;overflow:hidden;background:linear-gradient(110deg,rgba(247,251,255,.96),rgba(248,251,255,.96) 52%,rgba(255,250,239,.96))}
-.site-header::before{content:"";position:absolute;inset:-110% -12% 0;pointer-events:none;z-index:0;opacity:.55;
-  background-image:
-    repeating-linear-gradient(101deg,transparent 0 45px,rgba(70,129,186,.14) 46px,transparent 48px,transparent 93px),
-    repeating-linear-gradient(101deg,transparent 0 80px,rgba(195,155,84,.14) 81px,transparent 83px,transparent 151px),
-    radial-gradient(ellipse at 55% 65%,rgba(245,214,149,.23),transparent 63%);
-  background-size:240px 340px,325px 410px,100% 100%;
-  animation:header-light-rain 10s linear infinite;
+/* Heavenly blue header: the original entrance-page falling light over a dark sky */
+.site-header{
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse 55% 110% at 48% 0%,rgba(95,148,195,.40),transparent 80%),
+    linear-gradient(110deg,#0b1b3a 0%,#19416e 55%,#132b53 100%);
+  border-bottom:1px solid rgba(246,219,156,.55);
+  box-shadow:0 9px 29px rgba(6,18,41,.26);
+}
+.site-header::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 23% 42%,rgba(255,236,185,.17),transparent 28%),
+    radial-gradient(circle at 82% 36%,rgba(179,218,255,.17),transparent 25%),
+    radial-gradient(rgba(255,247,214,.60) .7px,transparent 1px);
+  background-size:auto,auto,81px 74px;
+}
+.header-light-rain{
+  position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;
+}
+.header-light-drop{
+  position:absolute;top:-100px;width:1.5px;height:86px;border-radius:2px;
+  background:linear-gradient(180deg,transparent,rgba(255,239,193,.60),rgba(224,241,255,.84),transparent);
+  filter:drop-shadow(0 0 5px rgba(249,231,171,.8));
+  animation:header-falling-light linear infinite;
+}
+@keyframes header-falling-light{
+  from{transform:translate3d(0,-30px,0)}
+  to{transform:translate3d(20px,390px)}
 }
 .header-inner{position:relative;z-index:1;min-height:125px}
-.wordmark img{width:118px;height:118px;object-fit:contain}
+.wordmark{color:#fff;text-shadow:0 2px 8px rgba(0,10,30,.4)}
+.wordmark img{width:118px;height:118px;object-fit:contain;filter:drop-shadow(0 5px 15px rgba(248,220,160,.5))}
+.wordmark small{color:#e3edf9}
+.nav-links a{color:#eef5ff;text-shadow:0 1px 5px rgba(0,12,37,.45)}
+.nav-links a:hover{color:#fbe0a6}
+.nav-cta{background:linear-gradient(125deg,#f9e1a8,#d9b06b);color:#172b4c}
+.nav-cta:hover{background:#fff0c7}
 .footer-brand img{width:185px;height:185px;object-fit:contain}
-@keyframes header-light-rain{from{transform:translate3d(0,-44px,0)}to{transform:translate3d(-28px,92px,0)}}
 @media(max-width:850px){
   .header-inner{min-height:0}
   .wordmark img{width:108px;height:108px}
@@ -80,5 +106,5 @@
   .footer-brand img{width:165px;height:165px}
 }
 @media(prefers-reduced-motion:reduce){
-  .site-header::before{animation:none;opacity:.38}
+  .header-light-drop{animation:none;display:none}
 }
