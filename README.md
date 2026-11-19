@@ -16,3 +16,6 @@ No unverified contact address is published. Add an official ministry email and a
 
 ## Editing
 Main page: `index.html`. Styling: `assets/style.css`. Custom missing-page experience: `404.html`.
+
+## Councils and ranks
+The public-facing `councils.html` explains the founding-stage Council of Shepherds, Divine Warriors, and proposed rank pathway. It is linked from the homepage and the invitation/volunteer menus and uses the existing ministry interest forms; no dedicated rank-awarding system or database exists yet. Do not represent unverified applicant submissions as received or ranks as conferred. Verify the third-party form workflow before recruitment campaigns.
