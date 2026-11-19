@@ -61,9 +61,7 @@
 .site-header{
   isolation:isolate;
   overflow:hidden;
-  background:
-    radial-gradient(ellipse 55% 110% at 48% 0%,rgba(95,148,195,.40),transparent 80%),
-    linear-gradient(110deg,#0b1b3a 0%,#19416e 55%,#132b53 100%);
+  background:radial-gradient(ellipse 65% 55% at 50% 36%,#5e8ab4 0%,#234b83 45%,#102853 78%,#0a1835 100%);
   border-bottom:1px solid rgba(246,219,156,.55);
   box-shadow:0 9px 29px rgba(6,18,41,.26);
 }
@@ -107,4 +105,39 @@
 }
 @media(prefers-reduced-motion:reduce){
   .header-light-drop{animation:none;display:none}
+}
+
+/* Ministry message form */
+.contact-inner{max-width:980px}
+.contact-form{
+  position:relative;margin:37px auto 0;padding:29px;text-align:left;
+  border:1px solid rgba(241,221,174,.32);border-radius:24px;
+  background:rgba(9,26,55,.60);box-shadow:0 16px 46px rgba(5,15,32,.20);
+}
+.contact-form-fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.contact-field label{font-size:.83rem;font-weight:800;letter-spacing:.02em;color:#fff4d8}
+.contact-optional{font-size:.75rem;font-weight:500;color:#d6e6f6}
+.contact-field input,.contact-field textarea{
+  width:100%;min-width:0;border:1px solid rgba(230,241,255,.54);border-radius:13px;
+  background:rgba(255,255,255,.97);color:#152e51;font:500 .94rem/1.5 'Manrope',sans-serif;
+  padding:13px 16px;box-shadow:none;
+}
+.contact-field textarea{resize:vertical;min-height:125px}
+.contact-field input::placeholder,.contact-field textarea::placeholder{color:#63758d}
+.contact-field input:focus-visible,.contact-field textarea:focus-visible{
+  outline:3px solid #f6d79b;outline-offset:2px
+}
+.contact-submit{border:0;cursor:pointer;margin-top:2px;min-width:190px}
+.contact-privacy{color:#d9e8f5;font-size:.76rem;line-height:1.7;margin:19px 0 0}
+.contact-direct{color:#e8f1fa;font-size:.85rem;margin:18px auto 0}
+.contact-direct a{color:#ffe2a7;text-underline-offset:4px;overflow-wrap:anywhere}
+.form-honeypot{position:absolute!important;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none}
+html{scroll-padding-top:145px}
+@media(max-width:850px){html{scroll-padding-top:180px}}
+@media(max-width:620px){
+ .contact-form{padding:20px 16px;border-radius:20px}
+ .contact-form-fields{grid-template-columns:1fr;gap:0}
+ .contact-submit{width:100%}
+ html{scroll-padding-top:175px}
 }
