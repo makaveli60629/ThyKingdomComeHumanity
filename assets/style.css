@@ -4,3 +4,14 @@
 @media(max-width:950px){.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:15px}.navlinks .btn{padding:9px 17px}.hero{padding:100px 0 110px}}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding:85px 0 100px}.hero:before{right:-360px}.section{padding:72px 0}.nav{gap:14px;padding:15px 0}.navlinks{gap:9px 17px}.navlinks a{font-size:.82rem}.navlinks .btn{width:100%;margin-top:4px;padding:11px}.brand{font-size:.91rem}.panel{padding:28px}.actions .btn{width:100%}#support .wide{padding:28px}.hero h1{font-size:clamp(3rem,11vw,4.5rem)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Gentle celestial rainfall: gold light trails, not Matrix code */
+.hero{isolation:isolate}
+.hero>.wrap{position:relative;z-index:2}
+.hero:before{pointer-events:none}
+.hero:after{pointer-events:none}
+.hero{background-image:radial-gradient(ellipse at 85% 15%,#356b58 0%,transparent 43%),linear-gradient(125deg,#092527 5%,#15453d 75%,#1e5549)}
+.hero .wrap:before{content:"";position:absolute;inset:-125px -6vw -130px;z-index:-1;pointer-events:none;opacity:.55;background-image:repeating-linear-gradient(105deg,transparent 0 53px,#f4dba958 54px,#f4dba900 56px,transparent 59px 110px),repeating-linear-gradient(105deg,transparent 0 87px,#ffffff35 88px,transparent 90px 163px);background-size:330px 430px,470px 620px;animation:heavenly-rain 11s linear infinite;mask-image:linear-gradient(to bottom,transparent,#000 20%,#000 75%,transparent)}
+@keyframes heavenly-rain{from{background-position:0 -430px,0 -620px}to{background-position:-90px 430px,-130px 620px}}
+@media(max-width:760px){.hero .wrap:before{inset:-85px -5vw -100px;opacity:.35;animation-duration:16s}}
+@media(prefers-reduced-motion:reduce){.hero .wrap:before{animation:none;opacity:.16}}
