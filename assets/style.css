@@ -145,3 +145,28 @@ html{scroll-padding-top:145px}
 /* Mobile navigation: all primary sections stay accessible after removal of footer */
 @media(max-width:850px){.nav-links{gap:10px 18px;flex-wrap:wrap;justify-content:center}}
 @media(max-width:620px){.nav-links{gap:8px 13px}.nav-links a{font-size:.67rem}}
+
+/* Center the two-line ministry name in the header. */
+.wordmark > span{display:block;text-align:center}
+.wordmark small{text-align:center}
+
+/* Seven floating ministry values around the existing winged emblem. */
+.float-one{top:10%;left:4%}
+.float-two{top:29%;right:0}
+.float-three{bottom:25%;left:7%}
+.float-four{top:5%;right:16%;animation-delay:-1s}
+.float-five{top:43%;left:-2%;animation-delay:-3s}
+.float-six{bottom:24%;right:2%;animation-delay:-1.5s}
+.float-seven{bottom:9%;left:22%;animation-delay:-3.5s}
+@media(max-width:620px){
+  .hero-art{min-height:445px}
+  .floating-word{padding:7px 10px;font-size:.53rem;letter-spacing:.12em}
+  .float-one{top:7%;left:1%}
+  .float-two{top:31%;right:0}
+  .float-three{bottom:27%;left:1%}
+  .float-four{top:7%;right:4%}
+  .float-five{top:46%;left:0}
+  .float-six{bottom:27%;right:1%}
+  .float-seven{bottom:10%;left:24%}
+  .art-caption{bottom:-4px}
+}
