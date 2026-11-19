@@ -5,13 +5,13 @@
 @media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding:85px 0 100px}.hero:before{right:-360px}.section{padding:72px 0}.nav{gap:14px;padding:15px 0}.navlinks{gap:9px 17px}.navlinks a{font-size:.82rem}.navlinks .btn{width:100%;margin-top:4px;padding:11px}.brand{font-size:.91rem}.panel{padding:28px}.actions .btn{width:100%}#support .wide{padding:28px}.hero h1{font-size:clamp(3rem,11vw,4.5rem)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
-/* Gentle celestial rainfall: gold light trails, not Matrix code */
-.hero{isolation:isolate}
+
+/* Elegant rotating halo and passing light flare */
+.hero{isolation:isolate;overflow:hidden}
 .hero>.wrap{position:relative;z-index:2}
-.hero:before{pointer-events:none}
-.hero:after{pointer-events:none}
-.hero{background-image:radial-gradient(ellipse at 85% 15%,#356b58 0%,transparent 43%),linear-gradient(125deg,#092527 5%,#15453d 75%,#1e5549)}
-.hero .wrap:before{content:"";position:absolute;inset:-125px -6vw -130px;z-index:-1;pointer-events:none;opacity:.55;background-image:repeating-linear-gradient(105deg,transparent 0 53px,#f4dba958 54px,#f4dba900 56px,transparent 59px 110px),repeating-linear-gradient(105deg,transparent 0 87px,#ffffff35 88px,transparent 90px 163px);background-size:330px 430px,470px 620px;animation:heavenly-rain 11s linear infinite;mask-image:linear-gradient(to bottom,transparent,#000 20%,#000 75%,transparent)}
-@keyframes heavenly-rain{from{background-position:0 -430px,0 -620px}to{background-position:-90px 430px,-130px 620px}}
-@media(max-width:760px){.hero .wrap:before{inset:-85px -5vw -100px;opacity:.35;animation-duration:16s}}
-@media(prefers-reduced-motion:reduce){.hero .wrap:before{animation:none;opacity:.16}}
+.hero:before{content:"";position:absolute;pointer-events:none;z-index:0;right:-12%;top:-48%;width:min(85vw,900px);height:min(85vw,900px);border-radius:50%;border:1px solid #f6d99b55;background:conic-gradient(from 10deg,transparent 0deg,#f5d99a0a 42deg,#f5d99a3d 61deg,transparent 78deg,transparent 175deg,#ffffff19 197deg,transparent 218deg,transparent 360deg);box-shadow:0 0 90px #dfb96a19,inset 0 0 80px #d9b77713;animation:halo-turn 38s linear infinite}
+.hero:after{content:"";position:absolute;pointer-events:none;z-index:1;inset:-60% -100%;height:220%;width:65%;background:linear-gradient(100deg,transparent 35%,#fff8da00 43%,#ffe3a61b 49%,#ffffff65 50%,#ffe3a61b 51%,transparent 58%);transform:translateX(-100%) rotate(14deg);animation:light-pass 13s ease-in-out infinite}
+@keyframes halo-turn{to{transform:rotate(360deg)}}
+@keyframes light-pass{0%,18%{transform:translateX(-100%) rotate(14deg);opacity:0}25%{opacity:.7}43%{transform:translateX(370%) rotate(14deg);opacity:0}100%{transform:translateX(370%) rotate(14deg);opacity:0}}
+@media(max-width:760px){.hero:before{width:650px;height:650px;right:-440px;top:-150px}.hero:after{opacity:.55}}
+@media(prefers-reduced-motion:reduce){.hero:before,.hero:after{animation:none}.hero:after{display:none}}
