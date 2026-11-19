@@ -170,3 +170,58 @@ html{scroll-padding-top:145px}
   .float-seven{bottom:10%;left:24%}
   .art-caption{bottom:-4px}
 }
+
+
+/* Reflective metallic-gold lettering — November 18, 2026. */
+:root{--gold-metal-light:#f7dfaa;--gold-metal-dark:#88591d}
+.welcome h1,.welcome-name,.welcome-name span,.wordmark > span,.wordmark small,
+.hero-copy h1,.hero-copy h1 em,.quote-inner h2,.recruitment-top h2,
+.recruitment-top h2 em,.contact-inner h2,.contact-inner h2 em,.footer-brand strong{
+  color:var(--gold-metal-light);
+}
+@supports ((background-clip:text) or (-webkit-background-clip:text)){
+  .welcome h1,.welcome-name,.welcome-name span,.wordmark > span,.wordmark small,
+  .hero-copy h1,.hero-copy h1 em,.quote-inner h2,.recruitment-top h2,
+  .recruitment-top h2 em,.contact-inner h2,.contact-inner h2 em,.footer-brand strong{
+    background-image:linear-gradient(110deg,#b58036 0%,#f9e5b9 22%,#fffbea 36%,#e4ae56 53%,#ffefc5 67%,#ba8137 87%,#f7dfa5 100%);
+    background-size:210% 100%;
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:gold-letter-shimmer 9s ease-in-out infinite alternate;
+  }
+  .section h2 em,.vision-feature strong{
+    color:var(--gold-metal-dark);
+    background-image:linear-gradient(105deg,#583607 0%,#956019 29%,#efd28c 44%,#98651f 60%,#583607 100%);
+    background-size:190% 100%;
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  .vision-feature strong{
+    background-image:linear-gradient(105deg,#b58036 0%,#fff1c6 45%,#d49b42 73%,#f6d38b 100%);
+  }
+}
+@keyframes gold-letter-shimmer{
+  from{background-position:0% center}
+  to{background-position:100% center}
+}
+/* Symbols illustrate an open invitation rather than an exhaustive list of traditions. */
+.multi-faith-card{border-color:#dfc998;background:linear-gradient(160deg,#fff 0%,#fffdf7 100%)}
+.multi-faith-card .icon-bubble{background:#f7efdc;color:#91651e}
+.faith-symbols{display:flex;flex-wrap:wrap;gap:9px;margin:21px 0 12px;align-items:center}
+.faith-symbols span{
+  display:grid;place-items:center;width:35px;height:35px;
+  flex:0 0 35px;border:1px solid #d7bd88;border-radius:50%;
+  background:linear-gradient(135deg,#fff9e8,#f5e5bf);
+  color:#705017;font:normal 1.3rem/1 Georgia,'Noto Sans Symbols 2','Noto Sans Devanagari',serif;
+  box-shadow:0 3px 8px rgba(95,62,22,.10)
+}
+.multi-faith-card .faith-invite{font-size:.72rem;font-weight:800;letter-spacing:.025em;color:#72521f;margin:8px 0 0}
+@media(prefers-reduced-motion:reduce){
+  .welcome h1,.welcome-name,.welcome-name span,.wordmark > span,.wordmark small,
+  .hero-copy h1,.hero-copy h1 em,.quote-inner h2,.recruitment-top h2,
+  .recruitment-top h2 em,.contact-inner h2,.contact-inner h2 em,.footer-brand strong{
+    animation:none!important;background-position:45% center;
+  }
+}
