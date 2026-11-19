@@ -15,3 +15,5 @@
 @keyframes light-pass{0%,18%{transform:translateX(-100%) rotate(14deg);opacity:0}25%{opacity:.7}43%{transform:translateX(370%) rotate(14deg);opacity:0}100%{transform:translateX(370%) rotate(14deg);opacity:0}}
 @media(max-width:760px){.hero:before{width:650px;height:650px;right:-440px;top:-150px}.hero:after{opacity:.55}}
 @media(prefers-reduced-motion:reduce){.hero:before,.hero:after{animation:none}.hero:after{display:none}}
+
+.fundraising{margin:32px 0;padding:25px;border:1px solid #d9b77777;background:#fbf8f0;border-radius:16px}.fundraising-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.9rem;font-weight:700}.fundraising-head strong{color:#83672f}.fundraising-track{height:13px;background:#e4e6dc;border-radius:30px;overflow:hidden;margin:17px 0}.fundraising-track span{display:block;height:100%;background:linear-gradient(90deg,#b68a40,#e5c887);border-radius:30px}.fundraising .small{margin:0}
