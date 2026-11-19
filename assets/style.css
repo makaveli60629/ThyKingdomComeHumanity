@@ -56,3 +56,29 @@
   .footer-brand span{font-size:.68rem;letter-spacing:.15em}
   .footer-links{gap:15px 22px}
 }
+
+/* Translucent header light-rain, while keeping the original winged emblem intact */
+.site-header{isolation:isolate;overflow:hidden;background:linear-gradient(110deg,rgba(247,251,255,.96),rgba(248,251,255,.96) 52%,rgba(255,250,239,.96))}
+.site-header::before{content:"";position:absolute;inset:-110% -12% 0;pointer-events:none;z-index:0;opacity:.55;
+  background-image:
+    repeating-linear-gradient(101deg,transparent 0 45px,rgba(70,129,186,.14) 46px,transparent 48px,transparent 93px),
+    repeating-linear-gradient(101deg,transparent 0 80px,rgba(195,155,84,.14) 81px,transparent 83px,transparent 151px),
+    radial-gradient(ellipse at 55% 65%,rgba(245,214,149,.23),transparent 63%);
+  background-size:240px 340px,325px 410px,100% 100%;
+  animation:header-light-rain 10s linear infinite;
+}
+.header-inner{position:relative;z-index:1;min-height:125px}
+.wordmark img{width:118px;height:118px;object-fit:contain}
+.footer-brand img{width:185px;height:185px;object-fit:contain}
+@keyframes header-light-rain{from{transform:translate3d(0,-44px,0)}to{transform:translate3d(-28px,92px,0)}}
+@media(max-width:850px){
+  .header-inner{min-height:0}
+  .wordmark img{width:108px;height:108px}
+}
+@media(max-width:620px){
+  .wordmark img{width:102px;height:102px}
+  .footer-brand img{width:165px;height:165px}
+}
+@media(prefers-reduced-motion:reduce){
+  .site-header::before{animation:none;opacity:.38}
+}
