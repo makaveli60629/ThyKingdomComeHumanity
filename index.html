@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=7">
+<link rel="stylesheet" href="/assets/style.css?v=8">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Thy Kingdom Come Humanity Ministries">
 <meta property="og:title" content="Come As You Are | Thy Kingdom Come Humanity Ministries">
@@ -50,7 +50,7 @@
       <span>THY KINGDOM COME <small>HUMANITY MINISTRIES</small></span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#mission">Our Mission</a><a href="#vision">Our Vision</a><a href="#pathways">Our Plans</a><a href="#recruitment">Get Involved</a>
+      <a href="#mission">Our Mission</a><a href="#vision">Our Vision</a><a href="#pathways">Our Plans</a><a href="#recruitment">Join Us</a><a href="#contact">Contact Us</a>
     </nav>
     <a class="nav-cta" href="#recruitment">JOIN THE MISSION <span aria-hidden="true">↗</span></a>
   </div>
@@ -166,11 +166,11 @@
   </div>
 </section>
 </main>
-<footer class="footer"><div class="container footer-grid"><div class="footer-brand"><img src="/assets/thy-kingdom-come-logo.webp" width="185" height="185" alt=""><div><strong>THY KINGDOM COME</strong><span>HUMANITY MINISTRIES</span><small>Come as you are. Leave with hope.</small></div></div><div class="footer-links"><a href="#mission">Mission</a><a href="#vision">Vision</a><a href="#recruitment">Join Us</a><a href="#contact">Contact</a></div></div><div class="container footer-bottom"><p>© <span id="year">2026</span> Thy Kingdom Come Humanity Ministries. A founding-stage initiative. Programs and donation processing are not yet operating.</p><button type="button" id="replay-intro">Replay welcome ✧</button></div></footer>
+
 </div>
 <script>
 (function(){
-  var gate=document.getElementById('welcome'),site=document.getElementById('public-site'),enter=document.getElementById('enter-site'),replay=document.getElementById('replay-intro');
+  var gate=document.getElementById('welcome'),site=document.getElementById('public-site'),enter=document.getElementById('enter-site');
   var reduced=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var sky=document.getElementById('light-rain'),headerSky=document.getElementById('header-light-rain');
   if(!reduced){for(var i=0;i<52;i++){var d=document.createElement('span');d.className='light-drop';d.style.left=((i*47.31)%100)+'%';d.style.animationDelay=(-(i*0.41)%8)+'s';d.style.animationDuration=(3.8+(i%7)*0.49)+'s';d.style.opacity=(0.19+(i%5)*0.085);sky.appendChild(d);}
@@ -183,8 +183,6 @@
   site.inert=true;
   try{if(sessionStorage.getItem('tkc_site_entered')==='yes')finish(true)}catch(e){}
   enter.addEventListener('click',function(event){event.preventDefault();finish(false);window.scrollTo({top:0,behavior:'instant'})});
-  replay.addEventListener('click',function(){try{sessionStorage.removeItem('tkc_site_entered')}catch(e){}gate.hidden=false;site.inert=true;document.body.classList.remove('entered');window.scrollTo({top:0,behavior:'instant'});enter.focus()});
-  document.getElementById('year').textContent=new Date().getFullYear();
   if('IntersectionObserver' in window && !reduced){document.body.classList.add('motion-ready');var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('seen');obs.unobserve(e.target)}})},{threshold:.08});document.querySelectorAll('.reveal').forEach(function(x){obs.observe(x)})}
 })();
 </script>
