@@ -96,3 +96,10 @@ body.founding-page{overflow:auto;background:#f7faff}
 .donation-disabled{opacity:.79;cursor:not-allowed;box-shadow:none;margin:6px 0 17px;max-width:100%}
 .donation-disabled:hover{transform:none;box-shadow:none}
 @media(max-width:870px){.founding-page .page-navigation{justify-content:center}}
+
+
+/* Sitewide donate CTA — Thy Kingdom Come / Zeffy */
+.header-donate{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;gap:7px;padding:12px 18px;border-radius:999px;background:linear-gradient(120deg,#fbe9b6,#d9ac59);color:#12294a!important;text-decoration:none;font-weight:800;font-size:.78rem;letter-spacing:.055em;box-shadow:0 4px 20px #f1c47755;white-space:nowrap;position:relative;z-index:2}
+.header-donate:hover,.header-donate:focus-visible{background:#fff1c6;transform:translateY(-1px)}
+@media(max-width:1100px){.header-donate{padding:10px 13px;font-size:.7rem}}
+@media(max-width:870px){.founding-page .header-donate{order:2;margin:6px auto}.founding-page .page-navigation{order:3;width:100%}}
