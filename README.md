@@ -9,13 +9,16 @@ Static, responsive website for GitHub Pages. Includes home, mission, ministries,
 4. Verify both apex and www, and configure the preferred canonical domain.
 
 ## Donations
-Donation button currently directs to the founding-support section; **no payment collection is active**. Only replace with a verified, organization-owned processor after appropriate legal/tax review and a dedicated account. Do not publish bank details or personal payment links.
+The homepage displays a disabled **DONATE · COMING SOON** button, and other pages link to that funding-information section. **No payment collection is active**. Only replace with a verified, organization-owned processor after appropriate legal/tax review and a dedicated account. Do not publish bank details or personal payment links.
 
 ## Contact
-No unverified contact address is published. Add an official ministry email and accessible contact form when confirmed.
+The website shows `thykingdomcomeproject@gmail.com` as its founding contact and uses FormSubmit for interest and contact forms. Verify the service's activation and successful end-to-end submissions before relying on it for registrations.
 
 ## Editing
 Main page: `index.html`. Styling: `assets/style.css`. Custom missing-page experience: `404.html`.
 
 ## Councils and ranks
 The public-facing `councils.html` explains the founding-stage Council of Shepherds, Divine Warriors, and proposed rank pathway. It is linked from the homepage and the invitation/volunteer menus and uses the existing ministry interest forms; no dedicated rank-awarding system or database exists yet. Do not represent unverified applicant submissions as received or ranks as conferred. Verify the third-party form workflow before recruitment campaigns.
+
+## Site consistency
+All ministry pages now include the shared falling-light header script (`assets/header-rain.js`), the founder attribution (`“I AM WHO I AM”`) and a bottom-most co-founder credit. The site links users to the homepage support section instead of a live payment processor. Keep future donations tied to a verified organization-owned account with proper legal status and truthful tax disclosures.
