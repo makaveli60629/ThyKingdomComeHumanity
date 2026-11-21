@@ -128,7 +128,7 @@
       <span>THY KINGDOM COME <small>COMMUNITY CHURCH</small></span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#mission">Our Mission</a><a href="#vision">Our Vision</a><a href="#pathways">Our Plans</a><a href="/councils.html">Our Councils</a><a href="/invitation.html">Invitation</a><a href="/join.html">Join the Founding Team</a><a href="/partners.html">Church Partnerships</a><a href="/volunteer.html">Volunteer</a><a href="#support">Support / Donate</a><a href="#contact">Contact Us</a>
+      <a href="#mission">Our Mission</a><a href="#vision">Our Vision</a><a href="#pathways">Our Plans</a><a href="/councils.html">Our Councils</a><a href="/members.html">The Gathering</a><a href="/founder.html">Co-Founder</a><a href="/invitation.html">Invitation</a><a href="/join.html">Join the Founding Team</a><a href="/members.html">The Gathering</a><a href="/founder.html">Co-Founder</a><a href="/partners.html">Church Partnerships</a><a href="/volunteer.html">Volunteer</a><a href="#support">Support / Donate</a><a href="#contact">Contact Us</a>
     </nav>
     <a class="nav-cta" href="/join.html">JOIN THE MISSION <span aria-hidden="true">↗</span></a>
     <a class="header-donate" href="https://www.zeffy.com/donation-form/the-kingdom-come-humanity-ministry" target="_blank" rel="noopener noreferrer" aria-label="Donate securely to Thy Kingdom Come through Zeffy">❤ DONATE <span aria-hidden="true">↗</span></a>
@@ -254,8 +254,13 @@
         <p class="fundraiser-label">Live giving progress · Zeffy</p>
         <p class="fundraiser-target">Founding fundraising goal: $25,000</p>
         <div class="fundraiser-meter">
-          <iframe title="Live Zeffy fundraising total and goal progress" loading="lazy" src="https://www.zeffy.com/embed/thermometer/the-kingdom-come-humanity-ministry" allowTransparency="true"></iframe>
+          <iframe id="zeffy-progress" title="Zeffy fundraising total and goal progress" loading="lazy" src="https://www.zeffy.com/embed/thermometer/the-kingdom-come-humanity-ministry" allowTransparency="true"></iframe>
         </div>
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:12px;justify-content:space-between;margin:0">
+          <button id="refresh-zeffy-progress" type="button" style="border:1px solid #bd9b5c;background:#fff8eb;color:#193758;border-radius:99px;padding:9px 13px;cursor:pointer;font:800 .76rem 'Manrope',sans-serif">↻ Refresh total</button>
+          <a href="https://www.zeffy.com/donation-form/the-kingdom-come-humanity-ministry" target="_blank" rel="noopener noreferrer" style="font-size:.78rem;color:#315883;font-weight:800;text-underline-offset:3px">View campaign on Zeffy ↗</a>
+        </div>
+        <p class="giving-disclosure">Zeffy provides the amount shown above. After a donation, the figure can take time to reflect processing; refresh this display or check the Zeffy campaign directly. No website number is manually entered.</p>
         <a class="button gold-button donation-link" href="https://www.zeffy.com/donation-form/the-kingdom-come-humanity-ministry" target="_blank" rel="noopener noreferrer">DONATE SECURELY VIA ZEFFY <span aria-hidden="true">↗</span></a>
         <p class="giving-disclosure">The live total reflects contributions tracked by Zeffy, not a bank account balance. Thy Kingdom Come Humanity Ministry is in formation; Illinois incorporation and federal tax-exempt status have not yet been confirmed. Do not assume gifts are tax-deductible.</p>
         <a class="button soft-button" href="mailto:thykingdomcomeproject@gmail.com?subject=Supporting%20Thy%20Kingdom%20Come">Questions about our mission? <span aria-hidden="true">↗</span></a>
@@ -302,9 +307,19 @@
   <nav class="footer-links" aria-label="Footer navigation"><a href="/">Home</a><a href="/#mission">Our Mission</a><a href="/#vision">Our Vision</a><a href="/#pathways">Our Plans</a><a href="/councils.html">Our Councils</a><a href="/invitation.html">Invitation</a><a href="/volunteer.html">Volunteer</a><a href="/#contact">Contact</a></nav>
   <nav class="footer-social" aria-label="Official social accounts" style="display:flex;flex-wrap:wrap;gap:16px;font-size:.93rem"><a href="https://www.tiktok.com/@thy.kingdom.come29" rel="noopener noreferrer" target="_blank">TikTok</a><a href="https://www.instagram.com/thykingdomcomehumanity/" rel="noopener noreferrer" target="_blank">Instagram</a><a href="https://www.youtube.com/channel/UCAfTpzI8AHamxablPOezY9w" rel="noopener noreferrer" target="_blank">YouTube</a></nav>
   <p class="footer-copyright">© 2026 Thy Kingdom Come Community Church. All rights reserved. A ministry in formation.</p>
-<p class="footer-cofounder">Co-Founder: Ronald Chadee</p>
+<p class="footer-cofounder"><a href="/founder.html" style="color:#f8dfaa;text-underline-offset:4px">Ronald Chadee · Co-Founder &amp; Founding Steward</a> · In faith, God is the source of the mission.</p>
 </div></footer>
 </div>
+<script>
+(function(){
+  var refresh=document.getElementById('refresh-zeffy-progress'),meter=document.getElementById('zeffy-progress');
+  if(refresh&&meter){refresh.addEventListener('click',function(){
+    var clean='https://www.zeffy.com/embed/thermometer/the-kingdom-come-humanity-ministry';
+    meter.src=clean+'?refresh='+Date.now();
+    refresh.textContent='↻ Refresh again';
+  });}
+})();
+</script>
 <script>
 (function(){
   var gate=document.getElementById('welcome'),site=document.getElementById('public-site'),enter=document.getElementById('enter-site');
