@@ -85,3 +85,14 @@ body.founding-page{overflow:auto;background:#f7faff}
 .founding-page .intro-grid h1 em{background-image:linear-gradient(110deg,#b58036 0%,#f9e5b9 22%,#fffbea 36%,#e4ae56 53%,#ffefc5 67%,#ba8137 87%,#f7dfa5 100%);background-size:210% 100%;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gold-letter-shimmer 9s ease-in-out infinite alternate}
 }
 @media(prefers-reduced-motion:reduce){.founding-page .intro-grid h1 em{animation:none}}
+
+/* Unified founding-site navigation, footer attributions and safe donation placeholder — 2026-11-21 */
+.founding-page .page-navigation a{color:#ecf2fc;text-shadow:0 1px 5px rgba(0,12,37,.52)}
+.founding-page .page-navigation a:hover,.founding-page .page-navigation a[aria-current="page"]{color:#ffe1a0}
+.founding-page .page-navigation{gap:9px 16px}
+.founding-page .site-header .wordmark{color:#fff}
+.footer-founder strong{font-size:.85rem}
+.footer-cofounder{grid-column:1/-1;margin:0;border-top:1px solid rgba(255,255,255,.20);padding-top:17px;text-align:center;color:#f8dfaa;font-size:.78rem;font-weight:800;letter-spacing:.04em}
+.donation-disabled{opacity:.79;cursor:not-allowed;box-shadow:none;margin:6px 0 17px;max-width:100%}
+.donation-disabled:hover{transform:none;box-shadow:none}
+@media(max-width:870px){.founding-page .page-navigation{justify-content:center}}
