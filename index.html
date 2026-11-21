@@ -13,6 +13,21 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css?v=10">
 <link rel="stylesheet" href="/assets/launch.css?v=2">
+<style>
+/* Zeffy donation launch, November 21, 2026 */
+.header-donate{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;gap:7px;padding:12px 18px;border-radius:999px;background:linear-gradient(120deg,#fbe9b6,#d9ac59);color:#12294a;text-decoration:none;font-weight:800;font-size:.78rem;letter-spacing:.055em;box-shadow:0 4px 20px #f1c47755;white-space:nowrap}
+.header-donate:hover,.header-donate:focus-visible{background:#fff1c6;transform:translateY(-1px)}
+.giving-panel{display:flex;flex-direction:column;gap:12px}
+.giving-panel h3{margin:0}
+.giving-panel .fundraiser-label{font-weight:800;color:#234c7d;font-size:.96rem}
+.giving-panel .fundraiser-target{font-size:.84rem;color:#50617b;margin:0}
+.giving-panel .fundraiser-meter{position:relative;overflow:hidden;width:100%;height:120px;min-height:120px;border:1px solid #d6e4f2;border-radius:14px;background:#f6f9fc}
+.giving-panel .fundraiser-meter iframe{position:absolute;border:0;inset:0;width:100%;height:120px}
+.giving-panel .donation-link{display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;width:100%}
+.giving-panel .giving-disclosure{font-size:.78rem;line-height:1.55;color:#5c6d84;margin:0}
+@media(max-width:1100px){.header-donate{padding:10px 13px;font-size:.7rem}}
+@media(max-width:850px){.header-donate{display:inline-flex;margin:4px auto;order:2}.nav-links{order:3}}
+</style>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Thy Kingdom Come Community Church">
 <meta property="og:title" content="Thy Kingdom Come Community Church | Faith, Hope &amp; Service">
@@ -116,6 +131,7 @@
       <a href="#mission">Our Mission</a><a href="#vision">Our Vision</a><a href="#pathways">Our Plans</a><a href="/councils.html">Our Councils</a><a href="/invitation.html">Invitation</a><a href="/join.html">Join the Founding Team</a><a href="/partners.html">Church Partnerships</a><a href="/volunteer.html">Volunteer</a><a href="#support">Support / Donate</a><a href="#contact">Contact Us</a>
     </nav>
     <a class="nav-cta" href="/join.html">JOIN THE MISSION <span aria-hidden="true">↗</span></a>
+    <a class="header-donate" href="https://www.zeffy.com/donation-form/the-kingdom-come-humanity-ministry" target="_blank" rel="noopener noreferrer" aria-label="Donate securely to Thy Kingdom Come through Zeffy">❤ DONATE <span aria-hidden="true">↗</span></a>
   </div>
 </header>
 <main id="home" tabindex="-1">
@@ -127,7 +143,7 @@
         <h1 id="hero-title">Come as you are.<br><em>Leave with hope.</em></h1>
         <p class="hero-lead">No perfect past. No judgment at the door. Just people, purpose, and the belief that everyone deserves a chance to begin again.</p>
         <p class="hero-sub">We are building Thy Kingdom Come Community Church from the ground up—a faith-centered community with a vision to support people facing homelessness, addiction, personal loss, and life's hardest transitions.</p>
-        <div class="hero-actions"><a class="button gold-button" href="/join.html">Help build the foundation <span aria-hidden="true">↗</span></a><a class="button outline-button" href="#mission">Discover our purpose <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-actions"><a class="button gold-button" href="https://www.zeffy.com/donation-form/the-kingdom-come-humanity-ministry" target="_blank" rel="noopener noreferrer">Support the foundation <span aria-hidden="true">↗</span></a><a class="button outline-button" href="/join.html">Join our founding team <span aria-hidden="true">↓</span></a></div>
         <p class="hero-note"><span class="status-dot"></span> Founding stage · Seeking leaders, partners &amp; volunteers</p>
       </div>
       <div class="hero-art" aria-label="Original church emblem with angel wings and sword against a heavenly glow">
@@ -225,7 +241,27 @@
     </div>
   </section>
 
-  <section class="section support-section" id="support"><div class="container support-grid"><div class="reveal"><p class="eyebrow">A FOUNDATION BUILT ON TRUST</p><h2>Give the vision<br><em>room to grow.</em></h2><p>We welcome conversations with prospective supporters and mission-aligned partners. Secure organizational donation processing is not yet active; we will publish verified giving options only when the proper accounts and safeguards are in place.</p></div><div class="support-panel reveal"><div class="support-symbol" aria-hidden="true">✧</div><h3>Founding support</h3><p>We are preparing an organization-owned giving platform and a dedicated bank account.</p><button class="button gold-button donation-disabled" type="button" disabled aria-label="Donate, coming soon after account verification">DONATE · COMING SOON</button><span class="coming-soon">SECURE GIVING · COMING LATER</span><a class="button soft-button" href="mailto:thykingdomcomeproject@gmail.com?subject=Supporting%20the%20Thy%20Kingdom%20Come%20Mission">Ask about the mission <span aria-hidden="true">↗</span></a><p class="microcopy">No active fundraising total is represented. No promise of tax deductibility is made.</p></div></div></section>
+  <section class="section support-section" id="support">
+    <div class="container support-grid">
+      <div class="reveal">
+        <p class="eyebrow">A FOUNDATION BUILT ON TRUST</p>
+        <h2>Give the vision<br><em>room to grow.</em></h2>
+        <p>Thy Kingdom Come Humanity Ministry launched November 21, 2026. Your support helps us prepare responsible governance, establish our founding community, and plan future faith-centered service. Our Illinois incorporation and formal tax-status review remain in progress.</p>
+      </div>
+      <div class="support-panel giving-panel reveal">
+        <div class="support-symbol" aria-hidden="true">✧</div>
+        <h3>Build the foundation</h3>
+        <p class="fundraiser-label">Live giving progress · Zeffy</p>
+        <p class="fundraiser-target">Founding fundraising goal: $25,000</p>
+        <div class="fundraiser-meter">
+          <iframe title="Live Zeffy fundraising total and goal progress" loading="lazy" src="https://www.zeffy.com/embed/thermometer/the-kingdom-come-humanity-ministry" allowTransparency="true"></iframe>
+        </div>
+        <a class="button gold-button donation-link" href="https://www.zeffy.com/donation-form/the-kingdom-come-humanity-ministry" target="_blank" rel="noopener noreferrer">DONATE SECURELY VIA ZEFFY <span aria-hidden="true">↗</span></a>
+        <p class="giving-disclosure">The live total reflects contributions tracked by Zeffy, not a bank account balance. Thy Kingdom Come Humanity Ministry is in formation; Illinois incorporation and federal tax-exempt status have not yet been confirmed. Do not assume gifts are tax-deductible.</p>
+        <a class="button soft-button" href="mailto:thykingdomcomeproject@gmail.com?subject=Supporting%20Thy%20Kingdom%20Come">Questions about our mission? <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
 
   <section class="contact-section" id="contact">
   <div class="container contact-inner reveal">
