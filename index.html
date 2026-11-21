@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css?v=10">
-<link rel="stylesheet" href="/assets/launch.css?v=1">
+<link rel="stylesheet" href="/assets/launch.css?v=2">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Thy Kingdom Come Community Church">
 <meta property="og:title" content="Thy Kingdom Come Community Church | Faith, Hope &amp; Service">
@@ -84,6 +84,7 @@
 }
 </script>
 <noscript><style>body{overflow:auto!important}.welcome{display:none!important}#public-site{visibility:visible!important}</style></noscript>
+<script src="/assets/header-rain.js?v=1" defer></script>
 </head>
 <body>
 <a class="skip" href="#mission">Skip to the ministry</a>
@@ -112,7 +113,7 @@
       <span>THY KINGDOM COME <small>COMMUNITY CHURCH</small></span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#mission">Our Mission</a><a href="#vision">Our Vision</a><a href="#pathways">Our Plans</a><a href="/councils.html">Our Councils</a><a href="/invitation.html">Invitation</a><a href="/join.html">Join the Founding Team</a><a href="/partners.html">Church Partnerships</a><a href="/volunteer.html">Volunteer</a><a href="#contact">Contact Us</a>
+      <a href="#mission">Our Mission</a><a href="#vision">Our Vision</a><a href="#pathways">Our Plans</a><a href="/councils.html">Our Councils</a><a href="/invitation.html">Invitation</a><a href="/join.html">Join the Founding Team</a><a href="/partners.html">Church Partnerships</a><a href="/volunteer.html">Volunteer</a><a href="#support">Support / Donate</a><a href="#contact">Contact Us</a>
     </nav>
     <a class="nav-cta" href="/join.html">JOIN THE MISSION <span aria-hidden="true">↗</span></a>
   </div>
@@ -224,7 +225,7 @@
     </div>
   </section>
 
-  <section class="section support-section" id="support"><div class="container support-grid"><div class="reveal"><p class="eyebrow">A FOUNDATION BUILT ON TRUST</p><h2>Give the vision<br><em>room to grow.</em></h2><p>We welcome conversations with prospective supporters and mission-aligned partners. Secure organizational donation processing is not yet active; we will publish verified giving options only when the proper accounts and safeguards are in place.</p></div><div class="support-panel reveal"><div class="support-symbol" aria-hidden="true">✧</div><h3>Founding support</h3><p>Donation platform and transparent reporting are being prepared.</p><span class="coming-soon">SECURE GIVING · COMING LATER</span><a class="button soft-button" href="mailto:thykingdomcomeproject@gmail.com?subject=Supporting%20the%20Thy%20Kingdom%20Come%20Mission">Ask about the mission <span aria-hidden="true">↗</span></a><p class="microcopy">No active fundraising total is represented. No promise of tax deductibility is made.</p></div></div></section>
+  <section class="section support-section" id="support"><div class="container support-grid"><div class="reveal"><p class="eyebrow">A FOUNDATION BUILT ON TRUST</p><h2>Give the vision<br><em>room to grow.</em></h2><p>We welcome conversations with prospective supporters and mission-aligned partners. Secure organizational donation processing is not yet active; we will publish verified giving options only when the proper accounts and safeguards are in place.</p></div><div class="support-panel reveal"><div class="support-symbol" aria-hidden="true">✧</div><h3>Founding support</h3><p>We are preparing an organization-owned giving platform and a dedicated bank account.</p><button class="button gold-button donation-disabled" type="button" disabled aria-label="Donate, coming soon after account verification">DONATE · COMING SOON</button><span class="coming-soon">SECURE GIVING · COMING LATER</span><a class="button soft-button" href="mailto:thykingdomcomeproject@gmail.com?subject=Supporting%20the%20Thy%20Kingdom%20Come%20Mission">Ask about the mission <span aria-hidden="true">↗</span></a><p class="microcopy">No active fundraising total is represented. No promise of tax deductibility is made.</p></div></div></section>
 
   <section class="contact-section" id="contact">
   <div class="container contact-inner reveal">
@@ -261,19 +262,19 @@
 <footer class="founder-footer">
 <div class="container footer-grid">
   <div class="footer-branding"><img src="/assets/thy-kingdom-come-logo.webp" width="60" height="60" alt=""><div><strong>THY KINGDOM COME</strong><span>COMMUNITY CHURCH</span></div></div>
-  <div class="footer-founder"><strong>Founder: “I AM WHO I AM”</strong><span>/ Co-Founder: R. Chadee · Thy Kingdom Come Community Church</span></div>
+  <div class="footer-founder"><strong>Founder: “I AM WHO I AM”</strong></div>
   <nav class="footer-links" aria-label="Footer navigation"><a href="/">Home</a><a href="/#mission">Our Mission</a><a href="/#vision">Our Vision</a><a href="/#pathways">Our Plans</a><a href="/councils.html">Our Councils</a><a href="/invitation.html">Invitation</a><a href="/volunteer.html">Volunteer</a><a href="/#contact">Contact</a></nav>
   <nav class="footer-social" aria-label="Official social accounts" style="display:flex;flex-wrap:wrap;gap:16px;font-size:.93rem"><a href="https://www.tiktok.com/@thy.kingdom.come29" rel="noopener noreferrer" target="_blank">TikTok</a><a href="https://www.instagram.com/thykingdomcomehumanity/" rel="noopener noreferrer" target="_blank">Instagram</a><a href="https://www.youtube.com/channel/UCAfTpzI8AHamxablPOezY9w" rel="noopener noreferrer" target="_blank">YouTube</a></nav>
   <p class="footer-copyright">© 2026 Thy Kingdom Come Community Church. All rights reserved. A ministry in formation.</p>
+<p class="footer-cofounder">Co-Founder: Ronald Chadee</p>
 </div></footer>
 </div>
 <script>
 (function(){
   var gate=document.getElementById('welcome'),site=document.getElementById('public-site'),enter=document.getElementById('enter-site');
   var reduced=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var sky=document.getElementById('light-rain'),headerSky=document.getElementById('header-light-rain');
-  if(!reduced){for(var i=0;i<52;i++){var d=document.createElement('span');d.className='light-drop';d.style.left=((i*47.31)%100)+'%';d.style.animationDelay=(-(i*0.41)%8)+'s';d.style.animationDuration=(3.8+(i%7)*0.49)+'s';d.style.opacity=(0.19+(i%5)*0.085);sky.appendChild(d);}
-    for(var j=0;j<34;j++){var ray=document.createElement('span');ray.className='header-light-drop';ray.style.left=((j*37.19)%100)+'%';ray.style.animationDelay=(-(j*0.43)%7)+'s';ray.style.animationDuration=(3.4+(j%6)*0.49)+'s';ray.style.opacity=(0.30+(j%5)*0.12);headerSky.appendChild(ray);}}
+  var sky=document.getElementById('light-rain');
+  if(!reduced){for(var i=0;i<52;i++){var d=document.createElement('span');d.className='light-drop';d.style.left=((i*47.31)%100)+'%';d.style.animationDelay=(-(i*0.41)%8)+'s';d.style.animationDuration=(3.8+(i%7)*0.49)+'s';d.style.opacity=(0.19+(i%5)*0.085);sky.appendChild(d);}}
   function finish(skipFocus){
     document.body.classList.add('entered');site.inert=false;
     try{sessionStorage.setItem('tkc_site_entered','yes')}catch(e){}
