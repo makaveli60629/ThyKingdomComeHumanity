@@ -29,7 +29,7 @@ Welcome to Thy Kingdom Come Community Church, a Christian-rooted community in fo
 - Configured GitHub Pages domain: thykingdomcomehumanity.org; this site is hosted in this repository.
 - Site display name should be Thy Kingdom Come Community Church, even if the domain retains the historical humanity wording.
 - Church formation / volunteer plans are prospective, not established operating services.
-- Do not claim donation processing or tax-exempt status until verified.
+- Do not claim verified donation payouts or tax-exempt status until established.
 - The GitHub repository can update website content but Metricool cannot change Instagram, YouTube, or TikTok profile images. They must be changed in native profile settings or via supported Work computer-use tooling.
 - Master brand kit also saved in Google Drive under Thy Kingdom Come Project - Master Binder / Official Brand Kit - Nov 2026.
 
