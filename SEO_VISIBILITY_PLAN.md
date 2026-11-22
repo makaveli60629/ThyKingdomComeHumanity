@@ -1,5 +1,5 @@
 # Thy Kingdom Come Community Church — Search Visibility Plan
-Updated: 2026-11-19
+Updated: 2026-11-22
 Official canonical site in repository: https://thykingdomcomehumanity.org/
 
 ## Completed in the GitHub main branch
@@ -28,3 +28,12 @@ Official canonical site in repository: https://thykingdomcomehumanity.org/
 - Check rankings using Search Console data; a single personal Google search is not a reliable ranking baseline.
 - Google guidance: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 - Request recrawl: https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+
+## November 22, 2026 website audit and corrections
+- Corrected public legal-disclosure statements that wrongly said no IRS EIN had been issued; the EIN was issued November 21, 2026. The EIN number is intentionally not published.
+- Changed stale proposed corporation naming in the affected legal footers to the official IRS name, THY KINGDOM COME HUMANITY MINISTRY. Illinois nonprofit incorporation approval and federal tax status remain unverified.
+- Added Open Graph/Twitter social preview tags to Join, Partners, Privacy, and Gathering; aligned public page titles and descriptions with the Community Church identity. 
+- Added legalName to the homepage Organization schema and aligned the brand guide with proposed profile copy; profile edits must be applied in native social applications.
+- Updated the sitemap to include the Founder and Gathering pages. Search Console connection, sitemap submission, indexing, live deployment and security-report clearance are NOT verified by repository updates.
+- Updated misleading donation information in the repository README and thank-you copy to reflect Zeffy links and unverified payouts and deductibility. Do not start a campaign before settlement and compliance checks.
+- External scanners may flag the new domain as unsafe. Source review found no password-collection forms in the main HTML and links refer to Zeffy and FormSubmit; this is not a definitive security audit. Request a vendor review and verify Search Console Security Issues before reporting clearance.
