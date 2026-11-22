@@ -32,3 +32,15 @@ Welcome to Thy Kingdom Come Community Church, a Christian-rooted community in fo
 - Do not claim donation processing or tax-exempt status until verified.
 - The GitHub repository can update website content but Metricool cannot change Instagram, YouTube, or TikTok profile images. They must be changed in native profile settings or via supported Work computer-use tooling.
 - Master brand kit also saved in Google Drive under Thy Kingdom Come Project - Master Binder / Official Brand Kit - Nov 2026.
+
+
+## Social account completion checklist — November 22, 2026
+**Public channel/display name:** Thy Kingdom Come Community Church
+**Legal ministry identity for compliance:** THY KINGDOM COME HUMANITY MINISTRY (IRS EIN issued November 21, 2026; incorporation and federal tax status not yet confirmed)
+**Website:** https://thykingdomcomehumanity.org/
+**Suggested YouTube handle:** @ThyKingdomComeHumanity (only if available — do not assume it has been claimed)
+**YouTube channel About:** Welcome to Thy Kingdom Come Community Church, a Christian-rooted, all-welcome ministry being established by Thy Kingdom Come Humanity Ministry. Our mission is to build fellowship, compassion, and responsible community service for people facing hardship, loss, and new beginnings. We are gathering founding volunteers, leaders and partners. Programs are planned, not yet operating. Visit https://thykingdomcomehumanity.org/ to learn about the founding mission and ways to participate.
+**TikTok bio:** Faith • Compassion • Community. A church in formation. All are welcome. Join the mission.
+**Instagram bio:** Thy Kingdom Come Community Church | Faith • Compassion • Service | A community in formation | All welcome | Join our founding mission ↓
+**Brand image:** `assets/profile-wings-sword.webp` for profile avatars; `assets/thy-kingdom-come-logo.webp` for end card/website imagery.
+**Profile edits:** Not yet published to the platforms. Native YouTube, Instagram and TikTok account settings or an authorized platform connector are required. Never change a personal Google account display name to rename the church channel; use YouTube Studio channel customization.
